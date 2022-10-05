@@ -1,0 +1,334 @@
+/* колір основного тексту #212121*/
+/* вторинний колір тексту rgba(117, 117, 117, 1) */
+/* білий #FFFFFF */
+/* акцент #2196F3 */
+/* вторинний колір фона #F5F4FA */
+/* колір контактів #757575 */
+
+:root {
+  --primary-text-color: #212121;
+  --color-white: #ffffff;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --background-color-primary: #2f303a;
+  --background-color: #f5f5f5;
+  --background-color-sekondary: #f5f4fa;
+  --color-logo: #000000;
+  --background-color-button: #188ce8;
+  --font-family-primary: Roboto;
+  --font-family-sekondary: Raleway;
+  --color-text-contact: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Лого */
+
+.header {
+  border: 1px solid #ececec;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: var(--font-family-sekondary);
+  font-size: 26px;
+  line-height: 1.9;
+  text-decoration: none;
+}
+.logo .logo-web {
+  color: var(--accent-color);
+}
+.logo .logo-web:hover,
+.logo .logo-web:focus {
+  color: var(--primary-text-color);
+}
+
+.logo .logo-studio {
+  color: var(--color-logo);
+}
+
+.logo .logo-studio:hover,
+.logo .logo-studio:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link {
+  color: var(--primary-text-color);
+  padding: 32px 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.nav .item {
+  color: var(--text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.nav .item:hover,
+.nav .item:focus {
+  color: var(--accent-color);
+}
+
+/* Стилі для index.html */
+
+/* Header */
+
+.header {
+  background-color: var(--color-white);
+}
+
+/* Hero */
+
+.hero {
+  padding-bottom: 94px;
+
+  background-color: var(--background-color-primary);
+}
+
+.conteiner-hero {
+}
+.hero-title {
+  color: var(--color-white);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  cursor: pointer;
+
+  padding: 10px 32px;
+
+  color: var(--color-white);
+  background-color: var(--accent-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--color-white);
+  background-color: var(--background-color-button);
+}
+
+/* Section Переваги */
+
+.section {
+  padding-bottom: 94px;
+}
+
+.section-title {
+  color: var(--primary-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: var(--text-color);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Section Що робимо */
+.section-work {
+  padding-bottom: 94px;
+}
+
+.work-title {
+  color: var(--primary-text-color);
+
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+/* Section Наша команда */
+
+.section-team {
+  padding-bottom: 94px;
+  background-color: var(--background-color-sekondary);
+}
+.team-title {
+  color: var(--primary-text-color);
+
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.tiam-foto {
+  background-color: var(--color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.title {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.subtitle {
+  color: var(--text-color);
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Footer */
+
+.logo .logo-webf {
+  color: var(--accent-color);
+}
+
+.logo .logo-webf:hover,
+.logo .logo-webf:focus {
+  color: var(--color-white);
+}
+
+.logo .logo-studiof {
+  color: var(--color-white);
+}
+
+.logo .logo-studiof:hover,
+.logo .logo-studiof:focus {
+  color: var(--accent-color);
+}
+
+.footer {
+  background-color: var(--background-color-primary);
+}
+
+.nav .items {
+  color: var(--color-white);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  text-decoration: none;
+}
+
+.nav .items:hover,
+.nav .items:focus {
+  color: var(--accent-color);
+}
+
+.nav .items-contact {
+  color: var(--color-text-contact);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  text-decoration: none;
+}
+
+.nav .items-contact:hover,
+.nav .items-contact:focus {
+  color: var(--accent-color);
+}
+
+/* Стилі для portfolio.html */
+
+/* Кнопки навігації */
+.project {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.buttons {
+  cursor: pointer;
+
+  padding: 6px 22px;
+
+  color: var(--primary-text-color);
+  background-color: var(--background-color-sekondary);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: none;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+
+.buttons:hover,
+.buttons:focus {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+}
+
+/* Наші проекти */
+
+.section-project {
+  background-color: var(--color-white);
+  border: 1px solid #eeeeee;
+}
+
+.aside-subject {
+  color: var(--primary-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.subject {
+  color: var(--text-color);
+
+  font-size: 16px;
+  line-height: 1.88;
+}
