@@ -88,7 +88,7 @@ body {
 }
 
 .nav-link:last-child {
-  padding-right: 344px;
+  margin-right: 344px;
 }
 
 .nav-link .link {
@@ -123,10 +123,11 @@ body {
   align-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  gap: 50px;
 }
 
 .nav .item {
-  display: inline-block;
+  display: block;
   color: var(--text-color);
 
   font-weight: 500;
@@ -150,16 +151,12 @@ body {
 }
 
 .container-hero {
-  display: block;
-  justify-content: center;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .hero-title {
-  display: flex;
-  justify-content: center;
   width: 696px;
   padding-top: 200px;
   margin-top: 0;
@@ -177,9 +174,7 @@ body {
 
 .button {
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   min-width: 216px;
   padding: 10px 32px;
   margin-bottom: 200px;
@@ -211,32 +206,35 @@ body {
 
 .container-benefits {
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
-
-.title-benefits {
-  min-width: 270px;
+.section-title {
+  display: flex;
+  gap: 30px;
 }
 
-.section-title {
-  color: var(--primary-text-color);
+.title-benefits {
+}
 
-  padding-right: 30px;
+.title {
+  max-width: 270px;
   margin-bottom: 10px;
   margin-top: 0;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  color: var(--primary-text-color);
 }
 
 .subtitle {
+  max-width: 270px;
   margin-top: 0;
   margin-bottom: 118px;
+
   color: var(--text-color);
 
   font-size: 14px;
