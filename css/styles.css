@@ -372,9 +372,6 @@ body {
   color: var(--accent-color);
 }
 
-.footer {
-}
-
 .nav-footer .items {
   color: var(--color-white);
 
@@ -407,14 +404,23 @@ body {
 
 /* Кнопки навігації */
 .project {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
+  background-color: var(--color-white);
+  border: 1px solid #eeeeee;
+}
+
+.container-project {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .btn {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  gap: 8px;
 }
 
 .buttons {
@@ -443,13 +449,34 @@ body {
 }
 
 /* Наші проекти */
+.container-portfolio {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.portfolio-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px 30px;
+}
 
 .section-project {
-  background-color: var(--color-white);
+  width: 370px;
+  height: 404px;
   border: 1px solid #eeeeee;
 }
 
+.photo-portfolio {
+  margin-bottom: 20px;
+}
+
 .aside-subject {
+  padding: 0 24px;
+
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
 
   font-size: 18px;
@@ -458,6 +485,9 @@ body {
 }
 
 .subject {
+  padding: 0 24px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   color: var(--text-color);
 
   font-size: 16px;
