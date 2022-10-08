@@ -68,12 +68,12 @@ body {
   color: var(--primary-text-color);
 }
 
-.logo .logo-studio {
+.logo {
   color: var(--color-logo);
 }
 
-.logo .logo-studio:hover,
-.logo .logo-studio:focus {
+.logo:hover,
+.logo:focus {
   color: var(--accent-color);
 }
 
@@ -354,21 +354,29 @@ body {
   padding: 0 15px;
 }
 
-.logo .logo-webf {
+.logo-footer .logo-webf {
+  font-family: var(--font-family-sekondary);
+  font-size: 26px;
+  line-height: 1.9;
+
   color: var(--accent-color);
 }
 
-.logo .logo-webf:hover,
-.logo .logo-webf:focus {
+.logo-footer .logo-webf:hover,
+.logof .logo-webf:focus {
   color: var(--color-white);
 }
 
-.logo .logo-studiof {
+.logo-footer {
+  font-family: var(--font-family-sekondary);
+  font-size: 26px;
+  line-height: 1.9;
+  text-decoration: none;
   color: var(--color-white);
 }
 
-.logo .logo-studiof:hover,
-.logo .logo-studiof:focus {
+.logo-footer:hover,
+.logo-footer:focus {
   color: var(--accent-color);
 }
 
@@ -453,12 +461,14 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0;
 }
 .portfolio-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   gap: 30px 30px;
 }
 
@@ -469,6 +479,7 @@ body {
 }
 
 .photo-portfolio {
+  display: block;
   margin-bottom: 20px;
 }
 
