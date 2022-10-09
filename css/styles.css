@@ -70,12 +70,12 @@ body {
   color: var(--primary-text-color);
 }
 
-.logo .logo-studio {
+.logo {
   color: var(--color-logo);
 }
 
-.logo .logo-studio:hover,
-.logo .logo-studio:focus {
+.logo:hover,
+.logo:focus {
   color: var(--accent-color);
 }
 
@@ -216,14 +216,16 @@ body {
 }
 .section-title {
   display: flex;
+  padding-bottom: 24px;
+
   gap: 30px;
 }
 
 .title-benefits {
+  display: block;
 }
 
-.title {
-  max-width: 270px;
+.title-item {
   margin-bottom: 10px;
   margin-top: 0;
   font-size: 14px;
@@ -232,15 +234,13 @@ body {
   color: var(--primary-text-color);
 }
 
-.subtitle {
-  max-width: 270px;
+.subtitle-item {
   margin-top: 0;
-  margin-bottom: 118px;
 
   color: var(--text-color);
 
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
 }
 
 /* Section Що робимо */
@@ -295,9 +295,20 @@ body {
   padding: 0 15px;
 }
 
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
 .team-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 50px;
+
   color: var(--primary-text-color);
 
   font-size: 36px;
@@ -305,6 +316,8 @@ body {
 }
 
 .tiam-foto {
+  display: block;
+
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -312,6 +325,8 @@ body {
 }
 
 .title {
+  margin-top: 30px;
+  margin-bottom: 0;
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -320,6 +335,8 @@ body {
 }
 
 .subtitle {
+  margin-top: 10pt;
+  margin-bottom: 30px;
   color: var(--text-color);
 
   font-size: 16px;
@@ -327,30 +344,45 @@ body {
 }
 
 /* Footer */
-
-.logo .logo-webf {
-  color: var(--accent-color);
-}
-
-.logo .logo-webf:hover,
-.logo .logo-webf:focus {
-  color: var(--color-white);
-}
-
-.logo .logo-studiof {
-  color: var(--color-white);
-}
-
-.logo .logo-studiof:hover,
-.logo .logo-studiof:focus {
-  color: var(--accent-color);
-}
-
 .footer {
+  padding-top: 0;
   background-color: var(--background-color-primary);
 }
 
-.nav .items {
+.container-footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo-footer .logo-webf {
+  font-family: var(--font-family-sekondary);
+  font-size: 26px;
+  line-height: 1.9;
+
+  color: var(--accent-color);
+}
+
+.logo-footer .logo-webf:hover,
+.logof .logo-webf:focus {
+  color: var(--color-white);
+}
+
+.logo-footer {
+  font-family: var(--font-family-sekondary);
+  font-size: 26px;
+  line-height: 1.9;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--accent-color);
+}
+
+.nav-footer .items {
   color: var(--color-white);
 
   font-style: normal;
@@ -359,12 +391,12 @@ body {
   text-decoration: none;
 }
 
-.nav .items:hover,
-.nav .items:focus {
+.nav-footer .items:hover,
+.nav-footer .items:focus {
   color: var(--accent-color);
 }
 
-.nav .items-contact {
+.nav-footer .items-contact {
   color: var(--color-text-contact);
 
   font-style: normal;
@@ -373,8 +405,8 @@ body {
   text-decoration: none;
 }
 
-.nav .items-contact:hover,
-.nav .items-contact:focus {
+.nav-footer .items-contact:hover,
+.nav-footer .items-contact:focus {
   color: var(--accent-color);
 }
 
@@ -382,14 +414,23 @@ body {
 
 /* Кнопки навігації */
 .project {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
+  background-color: var(--color-white);
+  border: 1px solid #eeeeee;
+}
+
+.container-project {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .btn {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  gap: 8px;
 }
 
 .buttons {
@@ -418,13 +459,36 @@ body {
 }
 
 /* Наші проекти */
+.container-portfolio {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+.portfolio-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: 30px 30px;
+}
 
 .section-project {
   background-color: var(--color-white);
   border: 1px solid var(--color-border-portfolio);
 }
 
+.photo-portfolio {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .aside-subject {
+  padding: 0 24px;
+
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
 
   font-size: 18px;
@@ -433,6 +497,9 @@ body {
 }
 
 .subject {
+  padding: 0 24px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   color: var(--text-color);
 
   font-size: 16px;
